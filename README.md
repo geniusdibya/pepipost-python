@@ -1,8 +1,19 @@
-# Getting started
+![pepipostlogo](https://pepipost.com/assets/img/pepipost-footLogo.png)
 
-Pepipost is a cloud-based SMTP relay service that delivers highly personalised transactional emails to the inbox within seconds of your customer’s transaction
+# Official Python library :snake: for [Pepipost](https://pepipost.com)
 
-## How to Build
+   This SDK contain methods for easily interacting with the Pepipost Email Sending API to send emails within few seconds.
+
+We are trying to make our libraries a Community Driven. To help us building right things in proper order we would request you to help us by sharing comments, creating new issues or pull request.
+
+## Table of Content
+* [Installation](#installation)
+* [Quick Start](#quickstart)
+* [Announcements](#announcements)
+* [Roadmap](#roadmap)
+* [About](#about)
+* [License](#license)
+
 
 
 You must have Python ```2 >=2.7.9``` or Python ```3 >=3.4``` installed on your system to install and run this SDK. This SDK package depends on other Python packages like nose, jsonpickle etc. 
