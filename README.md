@@ -6,6 +6,12 @@
 
 We are trying to make our libraries a Community Driven. To help us building right things in proper order we would request you to help us by sharing comments, creating new issues or pull request.
 
+   We welcome any sort of contribution to this library.
+
+   The latest 2.5.0 version of this library provides is fully compatible with the latest Pepipost v2.0 API.
+
+   For any update of this library check [Releases]
+
 ## Table of Content
 * [Installation](#installation)
 * [Quick Start](#quickstart)
@@ -15,16 +21,37 @@ We are trying to make our libraries a Community Driven. To help us building righ
 * [License](#license)
 
 
+<a name="installation"></a>
+## Installation 
+   
+   There are two ways of installing the library for Pepipost either you can use ```pip install pepipost``` or ```git clone https://github.com/hellovikram/pepipost-python.git``` 
+   
+   Below are the steps inorder to install the library
+   
+### Prerequisites
+   * Python (2 >=2.7.9 or 3 >= 3.4)
+   * Python packages  
+     * nose
+     * jsonpickle
+   
+   We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
+   Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
+   
+### Defining Enviroment variable.   
+   
+   * Python and PIP Should be defined in your PATH.
+   * Check using 
+     ```pip --version```   --> Will display the version of PIP dependency manager installed.
+     ![image]()
+     
+     ```python --version```  --> Will Display the Version of Python installed which should be >=2.7.1 if you are using 2 else it can be >=3.4 if you are using python 3.
+     ![image2]()
+     
+   * Use Command line to navigate to directory containing the generated files which has ```requirements.txt```.
+   * Run the below command to download the requirements.
+     ```pip install -r requirement.txt```    
 
-You must have Python ```2 >=2.7.9``` or Python ```3 >=3.4``` installed on your system to install and run this SDK. This SDK package depends on other Python packages like nose, jsonpickle etc. 
-These dependencies are defined in the ```requirements.txt``` file that comes with the SDK.
-To resolve these dependencies, you can use the PIP Dependency manager. Install it by following steps at [https://pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/).
-
-Python and PIP executables should be defined in your PATH. Open command prompt and type ```pip --version```.
-This should display the version of the PIP Dependency Manager installed if your installation was successful and the paths are properly defined.
-
-* Using command line, navigate to the directory containing the generated files (including ```requirements.txt```) for the SDK.
-* Run the command ```pip install -r requirements.txt```. This should install all the required dependencies.
+#
 
 ![Building SDK - Step 1](https://apidocs.io/illustration/python?step=installDependencies&workspaceFolder=pepipost-Python)
 
