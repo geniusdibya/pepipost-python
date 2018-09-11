@@ -34,6 +34,10 @@ We are trying to make our libraries a Community Driven. To help us building righ
      * nose
      * jsonpickle
    
+   **OR**
+   
+   * [Pepipost package]()
+   
    We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
    Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
    
@@ -51,7 +55,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
    * Run the below command to download the requirements.
      ```pip install -r requirement.txt```    
 
-#
+### Usage
 
 ![Building SDK - Step 1](https://apidocs.io/illustration/python?step=installDependencies&workspaceFolder=pepipost-Python)
 
