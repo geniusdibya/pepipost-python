@@ -1,5 +1,8 @@
 ![pepipostlogo](https://pepipost.com/assets/img/pepipost-footLogo.png)
 
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
+[![Twitter Follow](https://img.shields.io/twitter/follow/pepi_post.svg?style=social&label=Follow)](https://twitter.com/pepi_post)
+
 # Official Python library :snake: for [Pepipost](https://pepipost.com)
 
    This SDK contain methods for easily interacting with the Pepipost Email Sending API to send emails within few seconds.
@@ -24,19 +27,26 @@ We are trying to make our libraries a Community Driven. To help us building righ
 <a name="installation"></a>
 ## Installation 
    
-   There are two ways of installing the library for Pepipost either you can use ```pip install pepipost``` or ```git clone https://github.com/hellovikram/pepipost-python.git``` 
+   There are two ways of installing the library for Pepipost either you can use 
+   
+   ```pip install pepipost``` 
+   
+   **OR**
+   
+   ```git clone https://github.com/hellovikram/pepipost-python.git``` 
    
    Below are the steps inorder to install the library
    
 ### Prerequisites
    * Python (2 >=2.7.9 or 3 >= 3.4)
+   * Python IDE (we are using [Pycharm](https://www.jetbrains.com/pycharm/download/) )
    * Python packages  
      * nose
      * jsonpickle
    
    **OR**
    
-   * [Pepipost package]()
+   * [Pepipost package]() (includes all dependencies)
    
    We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
    Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
@@ -55,22 +65,35 @@ We are trying to make our libraries a Community Driven. To help us building righ
    * Run the below command to download the requirements.
      ```pip install -r requirement.txt```    
 
-### Usage
+<a name="quickstart"></a>
+### Quickstart
 
-![Building SDK - Step 1](https://apidocs.io/illustration/python?step=installDependencies&workspaceFolder=pepipost-Python)
+   1. Using SDK from Github repository, Run the below command to download the requirements
+         
+      ```pip install -r requirement.txt```
+      
+      ![Building SDK - Step 1](https://apidocs.io/illustration/python?step=installDependencies&workspaceFolder=pepipost-Python)
+      
+      **OR**
 
+      Using PIP dependency manager download our official library directly from PIP 
+      
+      Run below Command inorder to download Pepipost library.
+      
+      ```pip install pepipost```
 
-## How to Use
-
-The following section explains how to use the Pepipost SDK package in a new project.
-
-### 1. Open Project in an IDE
-
-Open up a Python IDE like PyCharm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
-
-![Open project in PyCharm - Step 1](https://apidocs.io/illustration/python?step=pyCharm)
-
-Click on ```Open``` in PyCharm to browse to your generated SDK directory and then click ```OK```.
+   2. Open Project in an IDE
+   
+      Open up a Python IDE like PyCharm. 
+      The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
+      
+      ![Open project in PyCharm - Step 1](https://apidocs.io/illustration/python?step=pyCharm)
+      
+      Click on ```Open``` in PyCharm to browse to your generated SDK directory and then
+      
+      click ```OK```
+      
+    
 
 ![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=openProject0&workspaceFolder=pepipost-Python)     
 
