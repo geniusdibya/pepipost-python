@@ -40,15 +40,14 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
 ### Prerequisites
    * Python (2 >=2.7.9 or 3 >= 3.4)
-   1. Python IDE (we are using [Pycharm](https://www.jetbrains.com/pycharm/download/) )
-   2. Python packages  
+   * Python IDE (we are using [Pycharm](https://www.jetbrains.com/pycharm/download/) )
+   * Python packages  
       * nose
       * jsonpickle
-   
-      **OR**
-   
-   1. [Pepipost package]()
-   
+      * requests
+      * cachecontrol
+      * python-dateutil
+     
    Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
    
    We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
