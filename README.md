@@ -18,6 +18,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
 ## Table of Content
 * [Installation](#installation)
 * [Quick Start](#quickstart)
+* [Sample Example](#sample)
 * [Announcements](#announcements)
 * [Roadmap](#roadmap)
 * [About](#about)
@@ -44,7 +45,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
      * nose
      * jsonpickle
    
-     **OR**
+      **OR**
    
    * [Pepipost package]() (includes all dependencies)
    
@@ -57,11 +58,12 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
    * Python and PIP Should be defined in your PATH.
    * Check using 
+   
      ```pip --version```   --> Will display the version of PIP dependency manager installed.
-     ![image]()
-     
+
      ```python --version```  --> Will Display the Version of Python installed which should be >=2.7.1 if you are using 2 else it can be >=3.4 if you are using python 3.
-     ![image2]()
+     
+     ![image]()
      
    * Use Command line to navigate to directory containing the generated files which has ```requirements.txt```.  
 
@@ -92,130 +94,125 @@ We are trying to make our libraries a Community Driven. To help us building righ
       Click on ```Open``` in PyCharm to browse to your generated SDK directory and then
       
       click ```OK```
-      
-    
 
-![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=openProject0&workspaceFolder=pepipost-Python)     
+      ![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=openProject0&workspaceFolder=pepipost-Python)     
 
-The project files will be displayed in the side bar as follows:
+      The project files will be displayed in the side bar as follows:
 
-![Open project in PyCharm - Step 3](https://apidocs.io/illustration/python?step=openProject1&workspaceFolder=pepipost-Python&projectName=pepipost)     
+      ![Open project in PyCharm - Step 3](https://apidocs.io/illustration/python?step=openProject1&workspaceFolder=pepipost-Python&projectName=pepipost)     
 
-### 2. Add a new Test Project
+   3. Add a new Test Project
 
-Create a new directory by right clicking on the solution name as shown below:
+      Create a new directory by right clicking on the solution name as shown below:
 
-![Add a new project in PyCharm - Step 1](https://apidocs.io/illustration/python?step=createDirectory&workspaceFolder=pepipost-Python&projectName=pepipost)
+      ![Add a new project in PyCharm - Step 1](https://apidocs.io/illustration/python?step=createDirectory&workspaceFolder=pepipost-Python&projectName=pepipost)
 
-Name the directory as "test"
+      Name the directory as "test"
 
-![Add a new project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=nameDirectory)
+      ![Add a new project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=nameDirectory)
    
-Add a python file to this project with the name "testsdk"
+      Add a python file to this project with the name "testsdk"
 
-![Add a new project in PyCharm - Step 3](https://apidocs.io/illustration/python?step=createFile&workspaceFolder=pepipost-Python&projectName=pepipost)
+      ![Add a new project in PyCharm - Step 3](https://apidocs.io/illustration/python?step=createFile&workspaceFolder=pepipost-Python&projectName=pepipost)
 
-Name it "testsdk"
+      Name it "testsdk"
 
-![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?step=nameFile)
+      ![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?step=nameFile)
 
-In your python file you will be required to import the generated python library using the following code lines
+   4. Importing files from python library
 
-```Python
-from pepipost.pepipost_client import PepipostClient
-```
+      Inorder to import file you need to just copy the [sample file from here](#sample). 
 
-![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?step=projectFiles&workspaceFolder=pepipost-Python&libraryName=pepipost.pepipost_client&projectName=pepipost&className=PepipostClient)
+      ![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?step=projectFiles&workspaceFolder=pepipost-Python&libraryName=pepipost.pepipost_client&projectName=pepipost&className=PepipostClient)
 
-After this you can write code to instantiate an API client object, get a controller object and  make API calls. Sample code is given in the subsequent sections.
+   5. Update API key and Sending Domain
+   
+      * apikey: This will be available under: Login to your Pepipost account -> Settings -> Integration.
+      
+      * FromEmail: If your fromemail address is e.g. info@mydomain.com, then the Sending Domain mydomain need to be verified and active under your Pepipost account. You can manage the Sending Domain under: Login to Pepipost -> Settings -> Sending Domains.
+      
+   6. Run the Test Project
+   
+      To run the file 
+      
+      ```ctrl+F5```
+      
+      **OR** 
+      
+      Right click on your Python file inside your Test project and click on ```Run```
 
-### 3. Run the Test Project
+      ![Run Test Project - Step 1](https://apidocs.io/illustration/python?step=runProject&workspaceFolder=pepipost-Python&libraryName=pepipost.pepipost_client&projectName=pepipost&className=PepipostClient)
 
-To run the file within your test project, right click on your Python file inside your Test project and click on ```Run```
-
-![Run Test Project - Step 1](https://apidocs.io/illustration/python?step=runProject&workspaceFolder=pepipost-Python&libraryName=pepipost.pepipost_client&projectName=pepipost&className=PepipostClient)
-
-
-## How to Test
-
-You can test the generated SDK and the server with automatically generated test
-cases. unittest is used as the testing framework and nose is used as the test
-runner. You can run the tests as follows:
-
-  1. From terminal/cmd navigate to the root directory of the SDK.
-  2. Invoke ```pip install -r test-requirements.txt```
-  3. Invoke ```nosetests```
-
-## Initialization
-
-### 
-
-API client can be initialized as following.
+<a name="sample"></a>
+### Sample Example
 
 ```python
+from pepipost.pepipost_client import PepipostClient
+from pepipost.models.email_body import EmailBody
+from pepipost.models.personalizations import Personalizations
+from pepipost.models.attachments import Attachments
+from pepipost.models.mfrom import From
+from pepipost.models.email_body_attachments import EmailBodyAttachments
+from pepipost.models.settings import Settings
+from pepipost.exceptions.api_exception import APIException
+import jsonpickle
 
 client = PepipostClient()
-```
-
-
-
-# Class Reference
-
-## <a name="list_of_controllers"></a>List of Controllers
-
-* [EmailController](#email_controller)
-
-## <a name="email_controller"></a>![Class: ](https://apidocs.io/img/class.png ".EmailController") EmailController
-
-### Get controller instance
-
-An instance of the ``` EmailController ``` class can be accessed from the API Client.
-
-```python
- email_controller = client.email
-```
-
-### <a name="create_send_email"></a>![Method: ](https://apidocs.io/img/method.png ".EmailController.create_send_email") create_send_email
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> This Endpoint sends emails with the credentials passed.
-
-```python
-def create_send_email(self,
-                          api_key=None,
-                          body=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| apiKey |  ``` Optional ```  | Generated header parameter. Example value ='5ce7096ed4bf2b39dfa932ff5fa84ed9ed8' |
-| body |  ``` Optional ```  | The body passed will be json format. |
-
-
-
-#### Example Usage
-
-```python
-api_key = 'api_key'
+email_controller = client.email
 body = EmailBody()
+body.personalizations = []
 
-result = email_controller.create_send_email(api_key, body)
+api_key = 'api_key here '
+body.personalizations.append(Personalizations())
+body.personalizations[0].recipient = 'recipient'
+
+body.tags = 'tagsPython'
+body.mfrom = From()
+
+body.mfrom.from_email = 'fromEmail@pepipost.com'
+body.mfrom.from_name = 'vikram'
+body.subject = 'SDK'
+body.content = 'Python generated code'
+body.settings = Settings()
+
+body.settings.footer = 0
+body.settings.clicktrack = 1
+body.settings.opentrack = 1
+body.settings.unsubscribe = 1
+
+try:
+    result = email_controller.create_send_email(api_key, body)
+    if not (result.error_info.error_message is None):
+        print("Reason :: " + str(result.error_info.error_message) + "\n" + "Message :: " + str(result.message))
+    else:
+        print("Message :: " + result.message)
+except APIException as e:
+    print(e)
 
 ```
 
-#### Errors
+<a name="announcements"></a>
+# Announcements
 
-| Error Code | Error Description |
-|------------|-------------------|
-| 405 | Method not allowed |
+v2.5.0 has been released! Please see the [release notes](https://github.com/pepipost/pepipost-sdk-csharp/releases/tag/v2.5.0) for details.
+
+All updates to this library are documented in our [releases](https://github.com/pepipost/pepipost-sdk-csharp/releases). For any queries, feel free to reach out us at dx@pepipost.com
+
+<a name="roadmap"></a>
+## Roadmap
+
+If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/pepipost/pepipost-sdk-csharp/issues) and [pull requests](https://github.com/pepipost/pepipost-sdk-csharp/pulls). We would love to hear your feedback.
+
+<a name="about"></a>
+## About
+pepipost-php-sdk library is guided and supported by the Pepipost Developer Experience Team .
+This pepipost-php-sdk library is maintained and funded by Pepipost Ltd. The names and logos for pepipost-php-sdk are trademarks of Pepipost Ltd.
+
+<a name="license"></a>
+## License
+This code library was semi-automatically generated by APIMATIC v2.0 and licensed under The MIT License (MIT). 
 
 
-
-
-[Back to List of Controllers](#list_of_controllers)
 
 
 
