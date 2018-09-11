@@ -40,14 +40,14 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
 ### Prerequisites
    * Python (2 >=2.7.9 or 3 >= 3.4)
-   * Python IDE (we are using [Pycharm](https://www.jetbrains.com/pycharm/download/) )
-   * Python packages  
-     * nose
-     * jsonpickle
+   1. Python IDE (we are using [Pycharm](https://www.jetbrains.com/pycharm/download/) )
+   2. Python packages  
+      * nose
+      * jsonpickle
    
       **OR**
    
-   * [Pepipost package]() (includes all dependencies)
+   1. [Pepipost package]()
    
    Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
    
@@ -65,7 +65,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
      
      ![image]()
      
-   * Use Command line to navigate to directory containing the generated files which has ```requirements.txt```.  
+   * Use Command line to navigate to directory which has ```requirements.txt```.  
 
 <a name="quickstart"></a>
 ### Quickstart
@@ -164,18 +164,18 @@ body.personalizations = []
 
 api_key = 'api_key here '
 body.personalizations.append(Personalizations())
-body.personalizations[0].recipient = 'recipient'
+body.personalizations[0].recipient = 'recipient@your-mail.com'
 
 body.tags = 'tagsPython'
 body.mfrom = From()
 
-body.mfrom.from_email = 'fromEmail@pepipost.com'
-body.mfrom.from_name = 'vikram'
-body.subject = 'SDK'
-body.content = 'Python generated code'
+body.mfrom.from_email = 'example@your-verified-domain'
+body.mfrom.from_name = 'Example Pepi'
+body.subject = 'Emailing with Pepipost is easy'
+body.content = '<html><body>Hey,<br><br>Do you know integration is even simpler in Pepipost, <br>with Python <br> Happy Mailing ! <br><br>Pepipost </body></html>'
 body.settings = Settings()
 
-body.settings.footer = 0
+body.settings.footer = 1
 body.settings.clicktrack = 1
 body.settings.opentrack = 1
 body.settings.unsubscribe = 1
@@ -205,7 +205,7 @@ If you are interested in the future direction of this project, please take a loo
 
 <a name="about"></a>
 ## About
-pepipost-php-sdk library is guided and supported by the Pepipost Developer Experience Team .
+pepipost-php-sdk library is guided and supported by the [Pepipost Developer Experience Team](https://github.com/orgs/pepipost/teams/pepis/members) .
 This pepipost-php-sdk library is maintained and funded by Pepipost Ltd. The names and logos for pepipost-php-sdk are trademarks of Pepipost Ltd.
 
 <a name="license"></a>
