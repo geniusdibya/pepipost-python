@@ -33,7 +33,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
    **OR**
    
-   ```git clone https://github.com/hellovikram/pepipost-python.git``` 
+   ```git clone https://github.com/pepipost/pepipost-python.git``` 
    
    Below are the steps inorder to install the library
    
@@ -48,8 +48,10 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
    * [Pepipost package]() (includes all dependencies)
    
-   We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
    Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
+   
+   We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
+   
    
 ### Defining Enviroment variable.   
    
@@ -61,9 +63,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
      ```python --version```  --> Will Display the Version of Python installed which should be >=2.7.1 if you are using 2 else it can be >=3.4 if you are using python 3.
      ![image2]()
      
-   * Use Command line to navigate to directory containing the generated files which has ```requirements.txt```.
-   * Run the below command to download the requirements.
-     ```pip install -r requirement.txt```    
+   * Use Command line to navigate to directory containing the generated files which has ```requirements.txt```.  
 
 <a name="quickstart"></a>
 ### Quickstart
