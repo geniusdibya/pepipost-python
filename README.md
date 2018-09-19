@@ -57,7 +57,6 @@ Once Pepipost is install, use the sample example to test.
 
      ```python --version```  //This will display the version of Python installed. This should be >=2.7.1, if you are using Python 2 else it can be >=3.4 if you are using Python 3.
      
-     ![image]()
      
    * Use the below command to navigate to the directory: 
       
