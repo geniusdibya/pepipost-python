@@ -5,15 +5,12 @@
 
 # Official Python library :snake: for [Pepipost](https://pepipost.com)
 
-   This SDK contain methods for easily interacting with the Pepipost Email Sending API to send emails within few seconds.
+This SDK contain methods for easily interacting with the Pepipost Email Sending API to send emails within few seconds.
 
-We are trying to make our libraries a Community Driven. To help us building right things in proper order we would request you to help us by sharing comments, creating new issues or pull request.
+We are trying to make our libraries a Community Driven. To help us building right things in proper order we would request you to help us by sharing comments, creating new issues or pull request. We welcome any sort of contribution to this library.
 
-   We welcome any sort of contribution to this library.
-
-   The latest 2.5.0 version of this library provides is fully compatible with the latest Pepipost v2.0 API.
-
-   For any update of this library check [Releases]
+The latest 2.5.0 version of this library provides is fully compatible with the latest Pepipost v2.0 API.
+For any update of this library check [Releases]
 
 ## Table of Content
 * [Installation](#installation)
@@ -28,17 +25,16 @@ We are trying to make our libraries a Community Driven. To help us building righ
 <a name="installation"></a>
 ## Installation 
    
-   There are two ways of installing the library for Pepipost either you can use 
+There are two ways of installing this Pepipost library. You can use either of the below: 
    
-   ```pip install pepipost``` 
+```pip install pepipost``` 
    
-   **OR**
+**OR**
    
-   ```git clone https://github.com/hellovikram/pepipost-python.git pepipost_python``` 
+```git clone https://github.com/hellovikram/pepipost-python.git pepipost_python``` 
    
-   Below are the steps inorder to install the library
-   
-### Prerequisites
+ 
+#### Prerequisites
    * Python (2 >=2.7.9 or 3 >= 3.4)
    * Python IDE (we are using [Pycharm](https://www.jetbrains.com/pycharm/download/) )
    * Python packages  
@@ -48,33 +44,29 @@ We are trying to make our libraries a Community Driven. To help us building righ
       * cachecontrol
       * python-dateutil
      
-   Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/).
+   * Installation of PIP can be done from [here](https://pip.pypa.io/en/stable/installing/). 
+   * We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
    
-   We recommend using PIP Dependency manager in order to install all the dependencies which we had mentioned in ```requirements.txt``` files that comes in SDK.
    
+#### Defining environment variable.   
    
-### Defining Enviroment variable.   
+   * Python and PIP should be defined in your PATH. Verify the same using below commands:
    
-   * Python and PIP Should be defined in your PATH.
-   * Check using 
-   
-     ```pip --version```   --> Will display the version of PIP dependency manager installed.
+     ```pip --version```   //This will display the version of PIP dependency manager installed.
 
-     ```python --version```  --> Will display the version of Python installed 
-     
-     which should be >=2.7.1 if you are using python 2 else it can be >=3.4 if you are using python 3.
+     ```python --version```  //This will display the version of Python installed. This should be >=2.7.1, if you are using Python 2 else it can be >=3.4 if you are using Python 3.
      
      ![image]()
      
-   * Use Command line to navigate to directory 
+   * Use the below command to navigate to the directory: 
       
      ```cd pepipost_python```
       
 
 <a name="quickstart"></a>
-### Quickstart
+## Quickstart
 
-   1. Using SDK from Github repository, Run the below command to download the requirements
+   1. Using SDK from GitHub repository, Run the below command to download the requirements
          
       ```pip install -r requirement.txt```
       
