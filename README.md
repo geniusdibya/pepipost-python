@@ -7,10 +7,10 @@
 
 This SDK contain methods for easily interacting with the Pepipost Email Sending API to send emails within few seconds.
 
-We are trying to make our libraries a Community Driven. To help us building right things in proper order we would request you to help us by sharing comments, creating new issues or pull request. We welcome any sort of contribution to this library.
+We are trying to make our libraries a Community Driven. To help us building right things in proper order we would request you to help us by sharing comments, creating new [issues](https://github.com/pepipost/pepipost-sdk-python/issues) or [pull requests](https://github.com/pepipost/pepipost-sdk-python/pulls). We welcome any sort of contribution to this library.
 
 The latest 2.5.0 version of this library provides is fully compatible with the latest Pepipost v2.0 API.
-For any update of this library check [Releases]
+For any update of this library check [Releases](https://github.com/pepipost/pepipost-sdk-python/releases)
 
 ## Table of Content
 * [Installation](#installation)
@@ -32,7 +32,7 @@ Once Pepipost is install, use the sample example to test.
    
 **OR**
    
-```git clone https://github.com/hellovikram/pepipost-python.git pepipost_python``` 
+```git clone https://github.com/pepipost/pepipost-sdk-python.git pepipost_python``` 
    
  
 #### Prerequisites
@@ -180,14 +180,14 @@ except APIException as e:
 <a name="announcements"></a>
 # Announcements
 
-v2.5.0 has been released! Please see the [release notes](https://github.com/pepipost/pepipost-sdk-csharp/releases/tag/v2.5.0) for details.
+v2.5.0 has been released! Please see the [release notes](https://github.com/pepipost/pepipost-sdk-python/releases/) for details.
 
-All updates to this library are documented in our [releases](https://github.com/pepipost/pepipost-sdk-csharp/releases). For any queries, feel free to reach out us at dx@pepipost.com
+All updates to this library are documented in our [releases](https://github.com/pepipost/pepipost-sdk-python/releases). For any queries, feel free to reach out us at dx@pepipost.com
 
 <a name="roadmap"></a>
 ## Roadmap
 
-If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/pepipost/pepipost-sdk-csharp/issues) and [pull requests](https://github.com/pepipost/pepipost-sdk-csharp/pulls). We would love to hear your feedback.
+If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/pepipost/pepipost-sdk-python/issues) and [pull requests](https://github.com/pepipost/pepipost-sdk-python/pulls). We would love to hear your feedback.
 
 <a name="about"></a>
 ## About
