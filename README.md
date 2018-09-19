@@ -34,7 +34,7 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
    **OR**
    
-   ```git clone https://github.com/pepipost/pepipost-python.git``` 
+   ```git clone https://github.com/hellovikram/pepipost-python.git pepipost_python``` 
    
    Below are the steps inorder to install the library
    
@@ -60,11 +60,16 @@ We are trying to make our libraries a Community Driven. To help us building righ
    
      ```pip --version```   --> Will display the version of PIP dependency manager installed.
 
-     ```python --version```  --> Will Display the Version of Python installed which should be >=2.7.1 if you are using 2 else it can be >=3.4 if you are using python 3.
+     ```python --version```  --> Will display the version of Python installed 
+     
+     which should be >=2.7.1 if you are using python 2 else it can be >=3.4 if you are using python 3.
      
      ![image]()
      
-   * Use Command line to navigate to directory which has ```requirements.txt```.  
+   * Use Command line to navigate to directory 
+      
+     ```cd pepipost_python```
+      
 
 <a name="quickstart"></a>
 ### Quickstart
